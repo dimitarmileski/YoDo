@@ -2,7 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 
-<form asp-controller="Home" asp-action="DownloadVideo" method="post">
-    <!-- Input and Submit elements -->
-    <button>Download</button>
-</form>
+
+<!-- Input and Submit elements -->
+<div class="row">
+
+    <form asp-controller="Home" asp-action="DownloadVideo" method="post">
+        @Html.TextBox("videoUrl", "", new { placeholder = "Enter URL here.", @class = "form-control" })
+        <br />
+        <button id="downloadBtn" type="submit" class="btn btn-danger btn-block">Download <i class="fas fa-download"></i></button>
+
+    </form>
+</div>
+
+
+

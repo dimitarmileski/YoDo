@@ -7,6 +7,7 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link href="~/lib/font-awesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
@@ -14,24 +15,46 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet">
     </environment>
 </head>
 <body>
     <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4"><h1 style="text-align:center;">YoDo</h1></div>
+        <div class="col-md-4">
+            <h1 style="text-align:center;" class="display-4">YoDo 🥋</h1>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4  d-flex justify-content-center">
+            <span style="text-align: center;" class="badge badge-light">YouTube downloader</span>
+            <br />
+        </div>
         <div class="col-md-4"></div>
     </div>
 
     <partial name="_CookieConsentPartial" />
 
     <div class="container body-content">
-        @RenderBody()
-        <hr />
+        <div class="row">
+            <div class="col-md-4"> </div>
+            <div class="col-md-4 d-flex justify-content-center" style="text-align:center; margin-top: 40px;">
+                @RenderBody()
+            </div>
+            <div class="col-md-4"> </div>
+        </div>
+        
         <footer>
-            <div class="col-md-4"> </div>
-            <div class="col-md-4" style="text-align:center;">YoDo &copy; <a href="https://github.com/dimitarmileski">Dimitar Mileski</a> - 2019</div>
-            <div class="col-md-4"> </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-4"> </div>
+                <div class="col-md-4" style="text-align:center;">YoDo &copy; <a class="badge badge-light" href="https://github.com/dimitarmileski">Dimitar Mileski</a>  2019</div>
+                <div class="col-md-4"> </div>
+
+            </div>
         </footer>
     </div>
 
@@ -39,6 +62,7 @@
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+        <script defer src="~/lib/font-awesome/js/all.js"></script>
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
@@ -47,6 +71,7 @@
                 crossorigin="anonymous"
                 integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
         </script>
+
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
                 asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
@@ -54,6 +79,7 @@
                 integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script defer src="~/lib/font-awesome/js/all.min.js"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)

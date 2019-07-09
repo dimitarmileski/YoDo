@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "b5244333c08ad58f02bf7ff52a49d8860e44f9fc"
+    "signature": "8f34d6be848ab601dd5d66b28a923b8575918b3e"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "YoDo/1.0.0": {
         "dependencies": {
+          "Font.Awesome": "5.9.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -36,6 +37,7 @@
           "YoDo.dll": {}
         }
       },
+      "Font.Awesome/5.9.0": {},
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
       "Microsoft.NETCore.App/2.1.0": {
         "dependencies": {
@@ -3169,6 +3171,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Font.Awesome/5.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-knvG/Ir/ns2hACvW/cwIDedj6qVLeZir3y2nXvJ3Z/oyd3nu8eh0FXhXbwI5KMdAdB91Ns1cwngKaLIjYH41yg==",
+      "path": "font.awesome/5.9.0",
+      "hashPath": "font.awesome.5.9.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
