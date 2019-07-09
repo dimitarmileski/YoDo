@@ -16,11 +16,9 @@ namespace YoDo.Controllers
             return View();
         }
 
-        public IActionResult DownloadVideo() {
-
-
+        public IActionResult DownloadVideo(string videoUrl) {
      
-            SaveVideoToDisk("https://www.youtube.com/watch?v=BNHR6IQJGZs");
+            SaveVideoToDisk(videoUrl);
             return RedirectToAction(nameof(Index));
         }
 
