@@ -17,7 +17,9 @@ namespace YoDo.Controllers
         }
 
         public IActionResult DownloadVideo(string videoUrl) {
-     
+            if (videoUrl == null || videoUrl.Equals("")) {
+                return RedirectToAction(nameof(Index));
+            }
             SaveVideoToDisk(videoUrl);
             return RedirectToAction(nameof(Index));
         }
