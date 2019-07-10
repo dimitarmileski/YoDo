@@ -11,8 +11,15 @@ namespace YoDo.Controllers
 {
     public class HomeController : Controller
     {
+        private static bool success;
+
         public IActionResult Index()
         {
+            ViewBag.successDownload = false;
+
+            if (success) {
+                ViewBag.successDownload = true;
+            }
             return View();
         }
 
@@ -20,10 +27,13 @@ namespace YoDo.Controllers
         {
             if (videoUrl == null || videoUrl.Equals(""))
             {
+                success = false;
                 return RedirectToAction(nameof(Index));
             }
 
             Video.SaveVideoToDisk(videoUrl);
+            success = true;
+
             return RedirectToAction(nameof(Index));
         }
 
