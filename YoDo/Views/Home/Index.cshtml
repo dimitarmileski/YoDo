@@ -2,33 +2,94 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="row">
+        <form asp-controller="Home" asp-action="DownloadVideo" method="post">
+            @Html.TextBox("videoUrl", "", new { placeholder = "Enter URL here.", @class = "form-control" })
+            <br />
+            <button id="btnDownload" type="submit" class="btn btn-danger btn-block">Download <i class="fas fa-download"></i></button>
 
-    <form asp-controller="Home" asp-action="DownloadVideo" method="post">
-        @Html.TextBox("videoUrl", "", new { placeholder = "Enter URL here.", @class = "form-control"})
-        <br />
-        <button id="btnDownload" type="submit" class="btn btn-danger btn-block">Download <i class="fas fa-download"></i></button>
-        
-        <div style="display:inline-block; margin-top: 20px;">
-            <div id="spiner" class="spinner-border text-danger" style="display: inline-block;">
-                <span class="sr-only">Loading...</span>
+            <div style="display:inline-block; margin-top: 20px;">
+                <div id="spiner" class="spinner-border text-danger" style="display: inline-block;">
+                    <span class="sr-only">Loading...</span>
+                </div>
             </div>
+        </form>
+
+        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <div id="player"></div>
         </div>
-    </form>
-</div>
+
+    
 
 @section Scripts{
-<script type="text/javascript">
+    <script type="text/javascript">
+        var ytVideoId = "";
 
-    $(document).ready(function () {
-        $("#spiner").hide();
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
 
-        $("#btnDownload").click(function () {
+        function onYouTubeIframeAPIReady() {
 
-            $("#spiner").show();
+            if (ytVideoId != "") {
+                player = new YT.Player('player', {
+                    height: '390',
+                    width: '640',
+                    videoId: ytVideoId,
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+
+        }
+
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            //event.target.playVideo();
+        }
+
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+       // var done = false;
+        function onPlayerStateChange(event) {
+            //if (event.data == YT.PlayerState.PLAYING && !done) {
+            //    setTimeout(stopVideo, 6000);
+            //    done = true;
+            //}
+        }
+        function stopVideo() {
+            //player.stopVideo();
+        }
+
+        //JQuery
+        $(document).ready(function () {
+            $("#spiner").hide();
+
+
+            $("#videoUrl").change(function () {
+                // 2. This code loads the IFrame Player API code asynchronously.
+                var tag = document.createElement('script');
+
+                tag.src = "https://www.youtube.com/iframe_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+                var ytUrl = $("#videoUrl").val();
+                var str= ytUrl.split("=");
+                ytVideoId = str[1];
+
+            });
+
+
+            $("#btnDownload").click(function () {
+                $("#spiner").show();
+            });
         });
-    });
-</script>
+    </script>
 }
 
 
