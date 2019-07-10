@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using YoDo.Models;
-using VideoLibrary;
+
 
 namespace YoDo.Controllers
 {
@@ -16,20 +16,17 @@ namespace YoDo.Controllers
             return View();
         }
 
-        public IActionResult DownloadVideo(string videoUrl) {
-            if (videoUrl == null || videoUrl.Equals("")) {
+        public IActionResult DownloadVideo(string videoUrl)
+        {
+            if (videoUrl == null || videoUrl.Equals(""))
+            {
                 return RedirectToAction(nameof(Index));
             }
-            SaveVideoToDisk(videoUrl);
+
+            Video.SaveVideoToDisk(videoUrl);
             return RedirectToAction(nameof(Index));
         }
 
-        void SaveVideoToDisk(string link)
-        {
-            var youTube = YouTube.Default; // starting point for YouTube actions
-            var video = youTube.GetVideo(link); // gets a Video object with info about the video
-            System.IO.File.WriteAllBytes(@"C:\Users\User\Downloads\" + video.FullName, video.GetBytes());
-        }
 
         public IActionResult About()
         {
