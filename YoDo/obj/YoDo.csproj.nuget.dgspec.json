@@ -82,6 +82,10 @@
             "VideoLibrary": {
               "target": "Package",
               "version": "[2.0.3, )"
+            },
+            "popper.js": {
+              "target": "Package",
+              "version": "[1.14.3, )"
             }
           },
           "imports": [

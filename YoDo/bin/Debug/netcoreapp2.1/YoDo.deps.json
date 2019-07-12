@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "545fa8ed346564d0cb647f5eb7f5aaf04422e16e"
+    "signature": "a9de93c70581578ea7f2ae27630ae8689f9caa62"
   },
   "compilationOptions": {
     "defines": [
@@ -32,7 +32,8 @@
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
-          "VideoLibrary": "2.0.3"
+          "VideoLibrary": "2.0.3",
+          "popper.js": "1.14.3"
         },
         "runtime": {
           "YoDo.dll": {}
@@ -447,6 +448,7 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "popper.js/1.14.3": {},
       "System.Composition/1.0.31": {
         "dependencies": {
           "System.Composition.AttributedModel": "1.0.31",
@@ -3713,6 +3715,13 @@
       "sha512": "sha512-qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
+    },
+    "popper.js/1.14.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d8LyFd0qc+arQUImKHnp86GQjRtrh3/fqHklxjNjRF2tdDhvTVG6Q858k21LPfnXdirrhz5t/ZcAh3tZ7iHQxg==",
+      "path": "popper.js/1.14.3",
+      "hashPath": "popper.js.1.14.3.nupkg.sha512"
     },
     "System.Composition/1.0.31": {
       "type": "package",
