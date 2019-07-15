@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Google.Apis.YouTube.Samples;
+using YoDo.Models;
 
 namespace YoDo.Controllers
 {
@@ -45,6 +46,20 @@ namespace YoDo.Controllers
 
         //GET Convert
         public IActionResult Convert() {
+            return View();
+        }
+
+        //POST Convert
+        [HttpPost]
+        [ActionName("Convert")]
+        [ValidateAntiForgeryTokenAttribute]
+        public IActionResult Convert(string fileName, string formatSelected){
+
+            string inputName = fileName.Split(".")[0];
+            string inputFormat = fileName.Split(".")[1];
+
+            Video.Convert(inputName, inputFormat, inputName, formatSelected);
+
             return View();
         }
 
