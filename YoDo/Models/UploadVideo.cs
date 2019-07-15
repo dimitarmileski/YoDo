@@ -1,21 +1,4 @@
-﻿/*
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- *
- */
-
-using System;
+﻿using System;
 using System.IO;
 using System.Reflection;
 using System.Threading;
@@ -33,15 +16,15 @@ namespace Google.Apis.YouTube.Samples
     /// <summary>
     /// YouTube Data API v3 sample: upload a video.
     /// Relies on the Google APIs Client Library for .NET, v1.7.0 or higher.
-    /// See https://code.google.com/p/google-api-dotnet-client/wiki/GettingStarted
+    /// See https://developers.google.com/api-client-library/dotnet/get_started
     /// </summary>
-    public class UploadVideo
+    internal class UploadVideo
     {
         //[STAThread]
         //static void Main(string[] args)
         //{
-        //    Console.WriteLine("YouTube Data API: Upload Video");
-        //    Console.WriteLine("==============================");
+        //    System.Diagnostics.Debug.WriteLine("YouTube Data API: Upload Video");
+        //    System.Diagnostics.Debug.WriteLine("==============================");
 
         //    try
         //    {
@@ -51,18 +34,17 @@ namespace Google.Apis.YouTube.Samples
         //    {
         //        foreach (var e in ex.InnerExceptions)
         //        {
-        //            Console.WriteLine("Error: " + e.Message);
+        //            System.Diagnostics.Debug.WriteLine("Error: " + e.Message);
         //        }
         //    }
 
-        //    Console.WriteLine("Press any key to continue...");
+        //    System.Diagnostics.Debug.WriteLine("Press any key to continue...");
         //    Console.ReadKey();
         //}
 
         public async Task Run()
         {
             UserCredential credential;
-
             using (var stream = new FileStream("client_secrets.json", FileMode.Open, FileAccess.Read))
             {
                 credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
@@ -73,9 +55,7 @@ namespace Google.Apis.YouTube.Samples
                     "user",
                     CancellationToken.None
                 );
-
             }
-
 
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
@@ -85,13 +65,13 @@ namespace Google.Apis.YouTube.Samples
 
             var video = new Video();
             video.Snippet = new VideoSnippet();
-            video.Snippet.Title = "Test video";
-            video.Snippet.Description = "Test description";
-            video.Snippet.Tags = new string[] { "test_tag_1", "test_tag_2" };
+            video.Snippet.Title = "TEST Default Video Title";
+            video.Snippet.Description = "Default Video Description";
+            video.Snippet.Tags = new string[] { "tag1", "tag2" };
             video.Snippet.CategoryId = "22"; // See https://developers.google.com/youtube/v3/docs/videoCategories/list
             video.Status = new VideoStatus();
             video.Status.PrivacyStatus = "public"; // or "private" or "public"
-            var filePath = @"C:\Users\User\Desktop\example.mp4"; // Replace with path to actual movie file.
+            var filePath = @"C:\Users\User\Desktop\airplane.mp4"; // Replace with path to actual movie file.
 
             using (var fileStream = new FileStream(filePath, FileMode.Open))
             {
@@ -108,18 +88,18 @@ namespace Google.Apis.YouTube.Samples
             switch (progress.Status)
             {
                 case UploadStatus.Uploading:
-                    Console.WriteLine("{0} bytes sent.", progress.BytesSent);
+                    System.Diagnostics.Debug.WriteLine("{0} bytes sent.", progress.BytesSent);
                     break;
 
                 case UploadStatus.Failed:
-                    Console.WriteLine("An error prevented the upload from completing.\n{0}", progress.Exception);
+                    System.Diagnostics.Debug.WriteLine("An error prevented the upload from completing.\n{0}", progress.Exception);
                     break;
             }
         }
 
         void videosInsertRequest_ResponseReceived(Video video)
         {
-            Console.WriteLine("Video id '{0}' was successfully uploaded.", video.Id);
+            System.Diagnostics.Debug.WriteLine("Video id '{0}' was successfully uploaded.", video.Id);
         }
     }
 }

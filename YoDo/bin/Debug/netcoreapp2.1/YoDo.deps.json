@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "a9de93c70581578ea7f2ae27630ae8689f9caa62"
+    "signature": "d0f6304965040e7d6770d8ac9f808472f6157cdd"
   },
   "compilationOptions": {
     "defines": [
@@ -28,6 +28,7 @@
           "Google.Apis": "1.40.2",
           "Google.Apis.Auth": "1.40.2",
           "Google.Apis.YouTube.v3": "1.40.2.1593",
+          "MediaToolkit": "1.1.0.1",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
@@ -105,6 +106,17 @@
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.YouTube.v3.dll": {}
+        }
+      },
+      "MediaToolkit/1.1.0.1": {
+        "runtime": {
+          "lib/net40/MediaToolkit.dll": {
+            "assemblyVersion": "1.1.0.1",
+            "fileVersion": "1.1.0.1"
+          }
+        },
+        "compile": {
+          "lib/net40/MediaToolkit.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -3582,6 +3594,13 @@
       "sha512": "sha512-6W54TVX3XWvRuM+xUkTN8rSeheV4Z7xHL7AdLBHaVFLX6EIFcxkrDFwTmaqCI8wFPJdBK+N/9oU2I/8N3nBOvg==",
       "path": "google.apis.youtube.v3/1.40.2.1593",
       "hashPath": "google.apis.youtube.v3.1.40.2.1593.nupkg.sha512"
+    },
+    "MediaToolkit/1.1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R3u+udQOUDBGUzx4wOHsp6yiSLMdJle7a9E7JK4/btL4w/pdXAmNHP2JMe2Fpt35kLjKNE74oNKUM1hc6RceIA==",
+      "path": "mediatoolkit/1.1.0.1",
+      "hashPath": "mediatoolkit.1.1.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",

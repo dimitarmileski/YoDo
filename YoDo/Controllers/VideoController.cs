@@ -16,19 +16,22 @@ namespace YoDo.Controllers
 
         public async Task<IActionResult> Upload()
         {
+            System.Diagnostics.Debug.WriteLine("YouTube Data API: Upload Video");
+            System.Diagnostics.Debug.WriteLine("==============================");
+
             try
             {
-                UploadVideo uploadVideo = new UploadVideo();
-                await uploadVideo.Run();
+                new UploadVideo().Run().Wait();
             }
             catch (AggregateException ex)
             {
                 foreach (var e in ex.InnerExceptions)
                 {
-                    Console.WriteLine("Error: " + e.Message);
+                    System.Diagnostics.Debug.WriteLine("Error: " + e.Message);
                 }
             }
 
+            System.Diagnostics.Debug.WriteLine("Press any key to continue...");
             return View();
         }
 

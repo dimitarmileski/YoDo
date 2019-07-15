@@ -35,7 +35,7 @@
                     <a class="nav-link disabled" asp-controller="Home" asp-action="Index"><i class="fas fa-cogs"></i> Converter</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" asp-controller="Video" asp-action="Upload"><i class="fas fa-upload"></i> Upload Video</a>
+                    <a class="nav-link " asp-controller="Video" asp-action="Index"><i class="fas fa-upload"></i> Upload Video</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" asp-controller="Playlist" asp-action="Create"><i class="fas fa-plus-circle"></i> Create Playlist</a>
@@ -71,11 +71,11 @@
 
     <div class="container body-content">
         <div class="row">
-            <div class="col-md-4"> </div>
-            <div class="col-md-4" style="text-align:center; margin-top: 50px;">
+            <div class="col-md-3"> </div>
+            <div class="col-md-6" style="text-align:center; margin-top: 50px;">
                 @RenderBody()
             </div>
-            <div class="col-md-4"> </div>
+            <div class="col-md-3"> </div>
         </div>
 
         <footer>
