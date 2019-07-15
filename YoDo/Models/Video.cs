@@ -3,59 +3,12 @@ using MediaToolkit.Model;
 using MediaToolkit.Options;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using VideoLibrary;
 namespace YoDo.Models
 {
-
-    public enum VideoFormat {
-        asf,
-        avi,
-        f4v,
-        flv,
-        m2t,
-        m2ts,
-        mkv,
-        mov,
-        mp4,
-        mpg,
-        mts,
-        nut,
-        ogv,
-        ts,
-        vob,
-        webm,
-        wmv,
-        wtv
-    }
-
-    public enum AudioFormat {
-        aac,
-        aif,
-        aifc,
-        aiff,
-        au,
-        flac,
-        m4a,
-        m4v,
-        mka,
-        mp2,
-        mp3,
-        mpa,
-        ogg,
-        wav
-    }
-
-    public enum ImageFormat {
-        bmp,
-        gif,
-        jpeg,
-        jpg,
-        png,
-        tiff
-    }
-
 
     public class Video
     {
@@ -65,20 +18,46 @@ namespace YoDo.Models
                ? Environment.GetEnvironmentVariable("HOME")
                : Environment.ExpandEnvironmentVariables("%HOMEDRIVE%%HOMEPATH%");
 
-        public static void SaveVideoToDisk(string link)
+        public static void SaveVideoToDisk(string link, string format)
         {
-            var youTube = YouTube.Default; // starting point for YouTube actions
-            var video = youTube.GetVideo(link); // gets a Video object with info about the video
+            var youtube = YouTube.Default;
+            var video = youtube.GetVideo(link);
             System.IO.File.WriteAllBytes(homePath + @"\Downloads\" + video.FullName, video.GetBytes());
+
+            if (format.Equals("mp4"))
+            {
+                return;
+            }
+
+            if (Formats.isImageFormat(format))
+            {
+                DownloadVideoThumb(video.FullName, video.Title, format);
+            }
+            else
+            {
+
+                var inputFile = new MediaFile { Filename = homePath + @"\Downloads\" + video.FullName };
+                var outputFile = new MediaFile { Filename = $"{ homePath + @"\Downloads\" + video.Title}." + format };
+
+                using (var engine = new Engine())
+                {
+                    engine.GetMetadata(inputFile);
+
+                    engine.Convert(inputFile, outputFile);
+                }
+
+            }
+            //Deleting video downloaded in mp4 format, for converting to others format.
+            File.Delete(homePath + @"\Downloads\" + video.FullName);
+
         }
 
-
         //Saves the frame located on the 15th second of the video.
-        public static void DownloadVideoThumb(string inputName, string outputName)
+        public static void DownloadVideoThumb(string inputName, string outputName, string outputFormat)
         {
 
-            var inputFile = new MediaFile { Filename = homePath + @"\Downloads\" + inputName + ".mp4" };
-            var outputFile = new MediaFile { Filename = homePath + @"\Downloads\" + outputName + ".jpg" };
+            var inputFile = new MediaFile { Filename = homePath + @"\Downloads\" + inputName };
+            var outputFile = new MediaFile { Filename = homePath + @"\Downloads\" + outputName + "." + outputFormat };
 
             using (var engine = new Engine())
             {
@@ -180,5 +159,5 @@ namespace YoDo.Models
 
         }
     }
-   
+
 }

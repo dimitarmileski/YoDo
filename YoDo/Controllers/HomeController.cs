@@ -23,7 +23,7 @@ namespace YoDo.Controllers
             return View();
         }
 
-        public IActionResult DownloadVideo(string videoUrl)
+        public IActionResult DownloadVideo(string videoUrl, string formatSelected)
         {
             if (videoUrl == null || videoUrl.Equals(""))
             {
@@ -31,9 +31,7 @@ namespace YoDo.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-
-
-            Video.SaveVideoToDisk(videoUrl);
+            Video.SaveVideoToDisk(videoUrl, formatSelected);
             success = true;
 
             return RedirectToAction(nameof(Index));
