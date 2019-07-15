@@ -8,6 +8,55 @@ using System.Threading.Tasks;
 using VideoLibrary;
 namespace YoDo.Models
 {
+
+    public enum VideoFormat {
+        asf,
+        avi,
+        f4v,
+        flv,
+        m2t,
+        m2ts,
+        mkv,
+        mov,
+        mp4,
+        mpg,
+        mts,
+        nut,
+        ogv,
+        ts,
+        vob,
+        webm,
+        wmv,
+        wtv
+    }
+
+    public enum AudioFormat {
+        aac,
+        aif,
+        aifc,
+        aiff,
+        au,
+        flac,
+        m4a,
+        m4v,
+        mka,
+        mp2,
+        mp3,
+        mpa,
+        ogg,
+        wav
+    }
+
+    public enum ImageFormat {
+        bmp,
+        gif,
+        jpeg,
+        jpg,
+        png,
+        tiff
+    }
+
+
     public class Video
     {
 
