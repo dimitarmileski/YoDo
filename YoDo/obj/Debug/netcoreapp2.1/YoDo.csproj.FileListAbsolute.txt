@@ -33,3 +33,4 @@ C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Vid
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Playlist\Index.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Upload.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Playlist\Create.g.cshtml.cs
+C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Convert.g.cshtml.cs

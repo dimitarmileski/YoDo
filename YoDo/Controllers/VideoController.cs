@@ -43,6 +43,11 @@ namespace YoDo.Controllers
         }
 
 
+        //GET Convert
+        public IActionResult Convert() {
+            return View();
+        }
+
 
         public IActionResult Delete()
         {
