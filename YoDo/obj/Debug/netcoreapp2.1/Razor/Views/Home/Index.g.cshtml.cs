@@ -102,7 +102,7 @@ using YoDo.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(51, 3905, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "751978481a8c4ec68451545cafe89f8a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1821265ab24f4fbfb018091f83b793c9", async() => {
                 BeginContext(120, 12, true);
                 WriteLiteral("\r\n\r\n        ");
                 EndContext();
@@ -120,7 +120,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n\r\n        <div class=\"input-group\">\r\n            <select class=\"custom-select\" id=\"formatSelected\" name=\"formatSelected\" aria-label=\"Example select with button addon\">\r\n                ");
                 EndContext();
                 BeginContext(1156, 33, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6302654466674a1bb8f2b675f8ca6b73", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed2d495f14d14ed39019aab1d0476ce2", async() => {
                     BeginContext(1164, 16, true);
                     WriteLiteral("Choose format...");
                     EndContext();
@@ -140,7 +140,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1207, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "971d9a11ef7e4e359cca39a48d50ab99", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b23b9f80605407084a97a62a6502282", async() => {
                     BeginContext(1215, 8, true);
                     WriteLiteral("🎥 VIDEO");
                     EndContext();
@@ -160,7 +160,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1250, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3a9372b11fd64da8ae04632aa7ec05e9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a1868130a3945fabfe57b6027bc6855", async() => {
                     BeginContext(1270, 3, true);
                     WriteLiteral("asf");
                     EndContext();
@@ -182,7 +182,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1300, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e6903c953e74f408870fb707210fbc8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dcc2f5b8a587420a8d1d433f7eec981b", async() => {
                     BeginContext(1320, 3, true);
                     WriteLiteral("avi");
                     EndContext();
@@ -204,7 +204,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1350, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cd59b7970a743d6b4def327d3573496", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78e24983d3534ca29b116890f8999991", async() => {
                     BeginContext(1370, 3, true);
                     WriteLiteral("f4v");
                     EndContext();
@@ -226,7 +226,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1400, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd9a69f5319a4546bf067e7307d3f89a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d64dc2ad96a146359e536c8493d4aefc", async() => {
                     BeginContext(1420, 3, true);
                     WriteLiteral("flv");
                     EndContext();
@@ -248,7 +248,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1450, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a4b8dad0c9324c26854077b1aecdda77", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4955f73b685d49e6b46e2589c8b0df91", async() => {
                     BeginContext(1470, 3, true);
                     WriteLiteral("m2t");
                     EndContext();
@@ -270,7 +270,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1500, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ee140b3dafd40de994752df2e158e85", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0386c2d430d47c1b2b1069e61f41bd0", async() => {
                     BeginContext(1521, 4, true);
                     WriteLiteral("m2ts");
                     EndContext();
@@ -292,7 +292,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1552, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc1e38a9c18946d9841d288888c08afb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "118269219def4fa9a4e68b397c6434b5", async() => {
                     BeginContext(1572, 3, true);
                     WriteLiteral("mkv");
                     EndContext();
@@ -314,7 +314,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1602, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1314f37869b34af1a0804aad28e61abe", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "96a374f86f184620a89b0bd84117ffea", async() => {
                     BeginContext(1622, 3, true);
                     WriteLiteral("mov");
                     EndContext();
@@ -336,7 +336,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1652, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cf9f8a2332b40a59ba4da20207e91fa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aab2e0cd07da44f5b6ccb78db62277ca", async() => {
                     BeginContext(1681, 3, true);
                     WriteLiteral("mp4");
                     EndContext();
@@ -361,7 +361,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1711, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ed50a547c83495797a1347701b00b12", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9b1333de3a764452b936c66b64df3a73", async() => {
                     BeginContext(1731, 3, true);
                     WriteLiteral("mpg");
                     EndContext();
@@ -383,7 +383,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1761, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d71801d92a564b2c82ffcbc1817fd07b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7c7a390d6e1149de9804cc77abf13a88", async() => {
                     BeginContext(1781, 3, true);
                     WriteLiteral("mts");
                     EndContext();
@@ -405,7 +405,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1811, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d93b45825ec24e25b0329cb39ac55d46", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a72e63f8876640a19d9d67f49708575d", async() => {
                     BeginContext(1831, 3, true);
                     WriteLiteral("nut");
                     EndContext();
@@ -427,7 +427,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1861, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b30e5ff081924415812cdc099864e944", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95c64754058f4dc595ee85c3bdf9b864", async() => {
                     BeginContext(1881, 3, true);
                     WriteLiteral("ogv");
                     EndContext();
@@ -449,7 +449,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1911, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c987a1be3fe445489207429d66e883f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "95a6dff891e8413d8cdf510a081f7525", async() => {
                     BeginContext(1930, 2, true);
                     WriteLiteral("ts");
                     EndContext();
@@ -471,7 +471,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(1959, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85a226cd35024c1e8fd528d3189fa3b0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ad9d4b131324ceeb48636b4e169641a", async() => {
                     BeginContext(1979, 3, true);
                     WriteLiteral("vob");
                     EndContext();
@@ -493,7 +493,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2009, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4a593eea50d44cca62081c731c5ce81", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d51cbad5d914ed98776a9ad9fe17ea3", async() => {
                     BeginContext(2030, 4, true);
                     WriteLiteral("webm");
                     EndContext();
@@ -515,7 +515,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2061, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "273bf246b2ee4285a81baeb8bf3bcdb5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2afa2fc7818249abb8c6e321a37f161e", async() => {
                     BeginContext(2081, 3, true);
                     WriteLiteral("wmv");
                     EndContext();
@@ -537,7 +537,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2111, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "949f11efe651490290aea09118484b68", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9085e97aeefd433687bc0a95ad147c01", async() => {
                     BeginContext(2131, 3, true);
                     WriteLiteral("wtv");
                     EndContext();
@@ -559,7 +559,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2161, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b843d6fc8ce4108bcd05dfbbe54ec7b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c55faa024474054a1253d7bcb1ccfdf", async() => {
                     BeginContext(2169, 8, true);
                     WriteLiteral("🎧 AUDIO");
                     EndContext();
@@ -579,7 +579,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2204, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "668af45462504a42a1e6468eb9b0d3e3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cdbcf392786c4fd7a090b45610cdb3fd", async() => {
                     BeginContext(2224, 3, true);
                     WriteLiteral("aac");
                     EndContext();
@@ -601,7 +601,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2254, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd7fae81b28b4ceb8c65e18adb5f1c5f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28236b7ea80e4a7aa5ee54d53122841a", async() => {
                     BeginContext(2274, 3, true);
                     WriteLiteral("aif");
                     EndContext();
@@ -623,7 +623,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2304, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc4cb03b2713469d88e28b920d28fa2e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f63163ccaf449fa8970cbbbb2cd4450", async() => {
                     BeginContext(2325, 4, true);
                     WriteLiteral("aifc");
                     EndContext();
@@ -645,7 +645,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2356, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8dec057ea7cc49d99626aba48a8e039a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0700484a80fc4868b49c6825b60ce1d9", async() => {
                     BeginContext(2377, 4, true);
                     WriteLiteral("aiff");
                     EndContext();
@@ -667,7 +667,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2408, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c509e4bc1404cd7a5b654ca90f6a0fa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1ccf73c015bc4dcfbea5b0d4df291fc5", async() => {
                     BeginContext(2427, 2, true);
                     WriteLiteral("au");
                     EndContext();
@@ -689,7 +689,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2456, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f157544ba7544e3dafc4dd8790603034", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce09eae181f44c57b899e4baaca04e20", async() => {
                     BeginContext(2477, 4, true);
                     WriteLiteral("flac");
                     EndContext();
@@ -711,7 +711,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2508, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7bd8deec2764a599dddaac185e81def", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a3b665b6c564a3cb6936b54c4f006e6", async() => {
                     BeginContext(2528, 3, true);
                     WriteLiteral("m4a");
                     EndContext();
@@ -733,7 +733,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2558, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11ef932178df43adbfeeffe35c7e0d90", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "127d2b7231cc44b3ae1aec9056847600", async() => {
                     BeginContext(2578, 3, true);
                     WriteLiteral("m4v");
                     EndContext();
@@ -755,7 +755,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2608, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "13359569ad644cedaa97ae4c06bb7174", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b6d46a63d61442f8f5556f85604cf23", async() => {
                     BeginContext(2628, 3, true);
                     WriteLiteral("mka");
                     EndContext();
@@ -777,7 +777,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2658, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c437251b429d4911b4d1a6bb41e76cd8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c270a74e24ff476280aa64cd8dbf0545", async() => {
                     BeginContext(2678, 3, true);
                     WriteLiteral("mp2");
                     EndContext();
@@ -799,7 +799,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2708, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d68bbc08ba0e48ecaaa160fdddae7d4c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7bb1cd83f7dd4e7bbf22439f27251b3f", async() => {
                     BeginContext(2728, 3, true);
                     WriteLiteral("mp3");
                     EndContext();
@@ -821,7 +821,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2758, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bab01e4dbd94ae18c9d2b09c5447237", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de510090f0874059b65585c2d210e6b7", async() => {
                     BeginContext(2778, 3, true);
                     WriteLiteral("mpa");
                     EndContext();
@@ -843,7 +843,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2808, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c49b082c01e5493d914179380497a0cb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54a119809586424abf7c4e17ec4f971d", async() => {
                     BeginContext(2828, 3, true);
                     WriteLiteral("ogg");
                     EndContext();
@@ -865,7 +865,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2858, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7361a059e06246d7b1505083b1a0b34a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7783e29c53d24db48a56815b1f0244eb", async() => {
                     BeginContext(2878, 3, true);
                     WriteLiteral("wav");
                     EndContext();
@@ -887,7 +887,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2908, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41f2da24fa444d648440e47baa5f03a6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5cdd2791de44d18a2d926c9436f5f5d", async() => {
                     BeginContext(2916, 13, true);
                     WriteLiteral("🖼️ THUMBNAIL");
                     EndContext();
@@ -907,7 +907,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(2956, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b94088c409af4ee68f866dfe0238788b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "000ff04573c24666bceb832cbb3f950b", async() => {
                     BeginContext(2976, 3, true);
                     WriteLiteral("bmp");
                     EndContext();
@@ -929,7 +929,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(3006, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a2b851d9887d40e5b5722e50315fa650", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb05ce726c9a49aaa3e507d4b166994f", async() => {
                     BeginContext(3026, 3, true);
                     WriteLiteral("gif");
                     EndContext();
@@ -951,7 +951,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(3056, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98be2d5eb38d4af0b600efb37cc989a5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "52537883ae054abe86ed5c21ba279276", async() => {
                     BeginContext(3077, 4, true);
                     WriteLiteral("jpeg");
                     EndContext();
@@ -973,7 +973,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(3108, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebcb95e95bae4ead89ce1469caa20f90", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5df64cc284a94d258444ac0c107ed9be", async() => {
                     BeginContext(3128, 3, true);
                     WriteLiteral("jpg");
                     EndContext();
@@ -995,7 +995,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(3158, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bab02e6826f5485a92c1536f615aed6b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5b4b176d76d44213b3d49fb4df4f3e2f", async() => {
                     BeginContext(3178, 3, true);
                     WriteLiteral("png");
                     EndContext();
@@ -1017,7 +1017,7 @@ using YoDo.Models;
                 WriteLiteral("\r\n                ");
                 EndContext();
                 BeginContext(3208, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2618d3603b3348ae8f643a457ff7199a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "62eb342ba23c4e76a0f246b57f9f6d92", async() => {
                     BeginContext(3229, 4, true);
                     WriteLiteral("tiff");
                     EndContext();
