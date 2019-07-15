@@ -14,14 +14,20 @@ namespace YoDo.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Upload()
+        public async Task<IActionResult> Upload(string id)
         {
             System.Diagnostics.Debug.WriteLine("YouTube Data API: Upload Video");
             System.Diagnostics.Debug.WriteLine("==============================");
 
+            string fullVideoPath = @"C:\Users\User\Desktop\" + "airplane.mp4";
+
             try
             {
-                new UploadVideo().Run().Wait();
+                UploadVideo uploadVideo = new UploadVideo();
+                uploadVideo.Run(fullVideoPath).Wait();
+
+                if (uploadVideo.VideoId != null)
+                    ViewBag.VideoId = uploadVideo.VideoId;
             }
             catch (AggregateException ex)
             {
@@ -32,10 +38,14 @@ namespace YoDo.Controllers
             }
 
             System.Diagnostics.Debug.WriteLine("Press any key to continue...");
+
             return View();
         }
 
-        public IActionResult Delete() {
+
+
+        public IActionResult Delete()
+        {
             return View();
         }
     }

@@ -18,8 +18,11 @@ namespace Google.Apis.YouTube.Samples
     /// Relies on the Google APIs Client Library for .NET, v1.7.0 or higher.
     /// See https://developers.google.com/api-client-library/dotnet/get_started
     /// </summary>
+
     internal class UploadVideo
     {
+        public string VideoId;
+
         //[STAThread]
         //static void Main(string[] args)
         //{
@@ -42,7 +45,7 @@ namespace Google.Apis.YouTube.Samples
         //    Console.ReadKey();
         //}
 
-        public async Task Run()
+        public async Task Run(string videoPath)
         {
             UserCredential credential;
             using (var stream = new FileStream("client_secrets.json", FileMode.Open, FileAccess.Read))
@@ -71,7 +74,7 @@ namespace Google.Apis.YouTube.Samples
             video.Snippet.CategoryId = "22"; // See https://developers.google.com/youtube/v3/docs/videoCategories/list
             video.Status = new VideoStatus();
             video.Status.PrivacyStatus = "public"; // or "private" or "public"
-            var filePath = @"C:\Users\User\Desktop\airplane.mp4"; // Replace with path to actual movie file.
+            var filePath = videoPath; // Replace with path to actual movie file.
 
             using (var fileStream = new FileStream(filePath, FileMode.Open))
             {
@@ -100,6 +103,8 @@ namespace Google.Apis.YouTube.Samples
         void videosInsertRequest_ResponseReceived(Video video)
         {
             System.Diagnostics.Debug.WriteLine("Video id '{0}' was successfully uploaded.", video.Id);
+
+            this.VideoId = video.Id;
         }
     }
 }
