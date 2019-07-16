@@ -16,10 +16,12 @@ namespace YoDo.Controllers
         public IActionResult Index()
         {
             ViewBag.successDownload = false;
+            
 
             if (success) {
                 ViewBag.successDownload = true;
             }
+            success = false;
             return View();
         }
 

@@ -7,23 +7,6 @@
         @Html.TextBox("videoUrl", "", new { placeholder = "Enter URL here.", @class = "form-control" })
         <br />
 
-
-        @*<div class="btn-group">
-            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Formats
-            </button>
-            <div class="dropdown-menu">
-                <h6 class="dropdown-header">Video</h6>
-                <a class="dropdown-item" href="#">mp4</a>
-                <div class="dropdown-divider"></div>
-                <h6 class="dropdown-header">Audio</h6>
-                <a class="dropdown-item" href="#">mp3</a>
-            </div>
-        </div>
-
-        <button id="btnDownload" type="submit" class="btn btn-danger btn-block">Download <i class="fas fa-download"></i></button>*@
-
-
         <div class="input-group">
             <select class="custom-select" id="formatSelected" name="formatSelected" aria-label="Example select with button addon">
                 <option>Choose format...</option>
@@ -69,26 +52,28 @@
                 <option value="png">png</option>
                 <option value="tiff">tiff</option>
             </select>
-            <div class="input-group-append">
-                <button id="btnDownload" type="submit" class="btn btn-danger btn-block" type="button">Download <i class="fas fa-download"></i></button>
+            <div class="input-group-append" style="margin-bottom: 20px;">
+                <button id="btnSubmit" type="submit" class="btn btn-danger btn-block">Download <i class="fas fa-download"></i></button>
             </div>
         </div>
 
 
-        <div style="display:inline-block; margin-top: 25px; margin-bottom: 40px;">
+        <div id="divLoader" style="display:none;">
             <div id="spiner" class="spinner-border text-danger" style="position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
-                <span class="sr-only">Loading...</span>
+
             </div>
         </div>
 
         @if (@ViewBag.successDownload)
         {
-            @Html.Partial("_StatusMessages")
+            <div id="alert">
+                @Html.Partial("_StatusMessages")
+            </div>
         }
     </form>
 
         <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-        <div class="embed-responsive embed-responsive-16by9" style="box-sizing: border-box;">
+        <div class="embed-responsive embed-responsive-16by9" style="box-sizing: border-box; margin-top: 50px;">
             <div id="player"></div>
         </div>
 
@@ -137,10 +122,10 @@
             //player.stopVideo();
         }
 
+
+
         //JQuery
         $(document).ready(function () {
-            $("#spiner").hide();
-
 
             $("#videoUrl").change(function () {
                 // 2. This code loads the IFrame Player API code asynchronously.
@@ -158,9 +143,33 @@
             });
 
 
-            $("#btnDownload").click(function () {
-                $("#spiner").show();
+            //Spinner
+            $("#btnSubmit").click(function () {
+            $("#divLoader").show();
+            $.ajax
+                ({
+                    //url: '/Video/Convert',
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    data: {},
+                    //async: true,
+                    //processData: false,
+                    // cache: false,
+                    success: function (data) {
+                        $("#divLoader").hide();
+                        alert(data);
+                    },
+                    //error: function (xhr) {
+                    //    $("#divLoader").hide();
+                    //    alert('error');
+                    //}
+                })
             });
+
+
+            //Alert disapear after 4s
+            setTimeout(function () { $("#alert").hide(); }, 4000);
         });
     </script>
 }
