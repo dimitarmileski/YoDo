@@ -45,7 +45,7 @@ namespace Google.Apis.YouTube.Samples
         //    Console.ReadKey();
         //}
 
-        public async Task Run(string videoPath)
+        public async Task Run(string videoPath, string videoTitle)
         {
             UserCredential credential;
             using (var stream = new FileStream("client_secrets.json", FileMode.Open, FileAccess.Read))
@@ -68,7 +68,7 @@ namespace Google.Apis.YouTube.Samples
 
             var video = new Video();
             video.Snippet = new VideoSnippet();
-            video.Snippet.Title = "TEST Default Video Title";
+            video.Snippet.Title = videoTitle;
             video.Snippet.Description = "Default Video Description";
             video.Snippet.Tags = new string[] { "tag1", "tag2" };
             video.Snippet.CategoryId = "22"; // See https://developers.google.com/youtube/v3/docs/videoCategories/list

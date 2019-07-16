@@ -10,12 +10,16 @@ namespace YoDo.Controllers
 {
     public class VideoController : Controller
     {
-        public IActionResult Index()
-        {
+        public IActionResult Index() {
             return View();
         }
 
-        public async Task<IActionResult> Upload(string id)
+        //public IActionResult Upload()
+        //{
+        //    return View();
+        //}
+
+        public async Task<IActionResult> Upload(string id, string videoTitle)
         {
             System.Diagnostics.Debug.WriteLine("YouTube Data API: Upload Video");
             System.Diagnostics.Debug.WriteLine("==============================");
@@ -25,7 +29,7 @@ namespace YoDo.Controllers
             try
             {
                 UploadVideo uploadVideo = new UploadVideo();
-                uploadVideo.Run(fullVideoPath).Wait();
+                uploadVideo.Run(fullVideoPath, videoTitle).Wait();
 
                 if (uploadVideo.VideoId != null)
                     ViewBag.VideoId = uploadVideo.VideoId;
