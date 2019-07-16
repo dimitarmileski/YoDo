@@ -73,6 +73,11 @@ namespace YoDo.Models
         public static void Convert(string inputName, string inputFormat, string outputName, string outputFormat)
         {
 
+            //DVD format 
+            if (outputFormat.Equals("vob")) {
+                convertToDVD(inputName,inputFormat, outputName);
+            }
+
             var inputFile = new MediaFile { Filename = homePath + @"\Downloads\" + inputName + "." + inputFormat };
             var outputFile = new MediaFile { Filename = homePath + @"\Downloads\" + outputName + "." + outputFormat };
 
@@ -82,10 +87,10 @@ namespace YoDo.Models
             }
         }
 
-        public static void convertToDVD(string inputName, string outputName)
+        public static void convertToDVD(string inputName,string inputFormat, string outputName)
         {
 
-            var inputFile = new MediaFile { Filename = homePath + @"\Downloads\" + inputName + ".mp4" };
+            var inputFile = new MediaFile { Filename = homePath + @"\Downloads\" + inputName + "." + inputFormat };
             var outputFile = new MediaFile { Filename = homePath + @"\Downloads\" + outputName + ".vob" };
 
             var conversionOptions = new ConversionOptions
