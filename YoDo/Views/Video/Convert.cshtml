@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Convert";
 }
 
@@ -9,13 +8,13 @@
         <h4>Converter</h4>
     </div>
 
-    <form  method="post" asp-controller="Video" asp-action="Convert"> 
+    <form method="post" asp-controller="Video" asp-action="Convert">
         <div class="card-body">
 
             <p class="card-text">
                 <div class="input-group mb-3">
                     <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="fileName"  name="fileName">
+                        <input type="file" class="custom-file-input" id="fileName" name="fileName">
                         <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
                     </div>
                     <div class="input-group-append">
@@ -51,7 +50,17 @@
                 </div>
 
             </p>
-            <button href="#" type="submit" class="btn btn-danger">Convert</button>
+
+            <div id="divLoader" style="display:none; position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
+
+                <div class="spinner-grow text-danger" role="status">
+                </div>
+
+            </div>
+
+            <button href="#" id="btnSubmit" type="submit" value="Submit" class="btn btn-danger" style="margin-top: 40px;">Convert</button>
+
+
         </div>
     </form>
     <div class="card-footer text-muted">
@@ -60,19 +69,43 @@
 </div>
 
 
+
 @section Scripts{
-    <script>
-        $(document).ready(function () {
+<script>
+    $(document).ready(function () {
 
-            $('#fileName').on('change', function () {
-                //get the file name
-                var fileName = document.getElementById("fileName").files[0].name;
-                //replace the "Choose a file" label
-                $(this).next('.custom-file-label').html(fileName);
-            })
+        $('#fileName').on('change', function () {
+            //get the file name
+            var fileName = document.getElementById("fileName").files[0].name;
+            //replace the "Choose a file" label
+            $(this).next('.custom-file-label').html(fileName);
+        })
 
+
+        $("#btnSubmit").click(function () {
+            $("#divLoader").show();
+            $.ajax
+                ({
+                    //url: '/Video/Convert',
+                    dataType: "json",
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    data: {},
+                    //async: true,
+                    //processData: false,
+                    // cache: false,
+                    success: function (data) {
+                        $("#divLoader").hide();
+                        alert(data);
+                    },
+                    //error: function (xhr) {
+                    //    $("#divLoader").hide();
+                    //    alert('error');
+                    //}
+                })
         });
 
-    </script>
+    });
+</script>
 
 }
