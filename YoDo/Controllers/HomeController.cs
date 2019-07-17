@@ -13,6 +13,7 @@ namespace YoDo.Controllers
     {
         private static bool success;
 
+        //GET Download
         public IActionResult Index()
         {
             ViewBag.successDownload = false;
@@ -25,6 +26,9 @@ namespace YoDo.Controllers
             return View();
         }
 
+        //POST Download
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult DownloadVideo(string videoUrl, string formatSelected)
         {
             if (videoUrl == null || videoUrl.Equals(""))
@@ -37,14 +41,6 @@ namespace YoDo.Controllers
             success = true;
 
             return RedirectToAction(nameof(Index));
-        }
-
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -14,7 +14,6 @@ C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.AssemblyIn
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.TagHelpers.input.cache
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.TagHelpers.output.cache
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.RazorCoreGenerate.cache
-C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
@@ -30,7 +29,5 @@ C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.pdb
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_StatusMessages.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Index.g.cshtml.cs
-C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Playlist\Index.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Upload.g.cshtml.cs
-C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Playlist\Create.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Convert.g.cshtml.cs

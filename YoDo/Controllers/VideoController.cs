@@ -10,15 +10,16 @@ namespace YoDo.Controllers
 {
     public class VideoController : Controller
     {
+
+        //GET Upload
         public IActionResult Index() {
             return View();
         }
 
-        //public IActionResult Upload()
-        //{
-        //    return View();
-        //}
 
+        //POST Upload
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Upload(string id, string videoTitle, string videoTags, string videoCategorySelected, string videoDesc)
         {
             System.Diagnostics.Debug.WriteLine("YouTube Data API: Upload Video");
@@ -55,7 +56,6 @@ namespace YoDo.Controllers
 
         //POST Convert
         [HttpPost]
-        [ActionName("Convert")]
         [ValidateAntiForgeryTokenAttribute]
         public IActionResult Convert(string fileName, string formatSelected){
 
@@ -67,7 +67,7 @@ namespace YoDo.Controllers
             return View();
         }
 
-
+        //GET Delete
         public IActionResult Delete()
         {
             return View();
