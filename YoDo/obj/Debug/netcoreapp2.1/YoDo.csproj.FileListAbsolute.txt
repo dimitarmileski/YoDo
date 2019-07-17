@@ -31,3 +31,4 @@ C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Sha
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Index.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Upload.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Convert.g.cshtml.cs
+C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Search.g.cshtml.cs

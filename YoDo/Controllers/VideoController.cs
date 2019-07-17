@@ -74,5 +74,22 @@ namespace YoDo.Controllers
         {
             return View();
         }
+
+
+        //GET Search 
+        public IActionResult Search() {
+
+
+            return View();
+        }
+
+        //POST Search
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public IActionResult Search() {
+
+
+        //    return View();
+        //}
     }
 }
