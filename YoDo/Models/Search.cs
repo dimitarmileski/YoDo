@@ -28,6 +28,7 @@ using Google.Apis.Upload;
 using Google.Apis.Util.Store;
 using Google.Apis.YouTube.v3;
 using Google.Apis.YouTube.v3.Data;
+using YoDo.Models;
 
 namespace Google.Apis.YouTube.Samples
 {
@@ -64,8 +65,10 @@ namespace Google.Apis.YouTube.Samples
   
         //}
 
-        private async Task Run()
+        public async Task<List<VideoSearchInfo>> Run(string searchKeyword)
         {
+            VideoSearchInfo videoSearchInfo = new VideoSearchInfo();
+
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
                 ApiKey = "AIzaSyBemnWWSyoukmB_QzoLQke902v7ltD06fs",
@@ -73,13 +76,13 @@ namespace Google.Apis.YouTube.Samples
             });
 
             var searchListRequest = youtubeService.Search.List("snippet");
-            searchListRequest.Q = "Google"; // Replace with your search term.
+            searchListRequest.Q = searchKeyword; // Replace with your search term.
             searchListRequest.MaxResults = 50;
 
             // Call the search.list method to retrieve results matching the specified query term.
             var searchListResponse = await searchListRequest.ExecuteAsync();
 
-            List<string> videos = new List<string>();
+            List<VideoSearchInfo> videoSearchInfos = new List<VideoSearchInfo>();
             List<string> channels = new List<string>();
             List<string> playlists = new List<string>();
 
@@ -90,22 +93,52 @@ namespace Google.Apis.YouTube.Samples
                 switch (searchResult.Id.Kind)
                 {
                     case "youtube#video":
-                        videos.Add(String.Format("VideoTitle: {0} VideoId: ({1}) Videodescription: ({2}) Video published: ({3}) Video ({4})", searchResult.Snippet.Title, searchResult.Id.VideoId, searchResult.Snippet.Description, searchResult.Snippet.PublishedAt));
+                        videoSearchInfos.Add(new VideoSearchInfo{
+                            Title = searchResult.Snippet.Title,
+                            VideoId = searchResult.Id.VideoId,
+                            Description = searchResult.Snippet.Description,
+                            PublishedAt = searchResult.Snippet.PublishedAt.ToString(),
+                            ThumbnailUrl = searchResult.Snippet.Thumbnails.High.Url,
+                            ChannelTitle = searchResult.Snippet.ChannelTitle,
+                            ChannelId = searchResult.Snippet.ChannelId,
+                            isChannel = false,
+                            isPlaylist = false
+                           
+                        });
+                        //videoSearchInfos.Add(String.Format("VideoTitle: {0} VideoId: ({1}) Videodescription: ({2}) Video published: ({3}) Video ({4})", searchResult.Snippet.Title, searchResult.Id.VideoId, searchResult.Snippet.Description, searchResult.Snippet.PublishedAt));
                         break;
 
                     case "youtube#channel":
-                        channels.Add(String.Format("ChannelTitle: {0} ChannelId: ({1})", searchResult.Snippet.Title, searchResult.Id.ChannelId, searchResult.Snippet.Thumbnails.Maxres));
+
+                        videoSearchInfos.Add(new VideoSearchInfo
+                        {
+                            Title = searchResult.Snippet.Title,
+                            ChannelId = searchResult.Id.ChannelId,
+                            isChannel = true,
+                            isPlaylist = false
+                        });
+                        //channels.Add(String.Format("ChannelTitle: {0} ChannelId: ({1})", searchResult.Snippet.Title, searchResult.Id.ChannelId));
                         break;
 
                     case "youtube#playlist":
-                        playlists.Add(String.Format("PlaylistTitle: {0}  PlaylistId: ({1})", searchResult.Snippet.Title, searchResult.Id.PlaylistId));
+                        videoSearchInfos.Add(new VideoSearchInfo
+                        {
+                            Title = searchResult.Snippet.Title,
+                            PlaylistId = searchResult.Id.PlaylistId,
+                            isChannel = false,
+                            isPlaylist = true
+                        });
+                        //playlists.Add(String.Format("PlaylistTitle: {0}  PlaylistId: ({1})", searchResult.Snippet.Title, searchResult.Id.PlaylistId));
                         break;
                 }
             }
 
-            System.Diagnostics.Debug.WriteLine(String.Format("Videos:\n{0}\n", string.Join("\n", videos)));
-            System.Diagnostics.Debug.WriteLine(String.Format("Channels:\n{0}\n", string.Join("\n", channels)));
-            System.Diagnostics.Debug.WriteLine(String.Format("Playlists:\n{0}\n", string.Join("\n", playlists)));
+            //System.Diagnostics.Debug.WriteLine(String.Format("Videos:\n{0}\n", string.Join("\n", videos)));
+            //System.Diagnostics.Debug.WriteLine(String.Format("Channels:\n{0}\n", string.Join("\n", channels)));
+            //System.Diagnostics.Debug.WriteLine(String.Format("Playlists:\n{0}\n", string.Join("\n", playlists)));
+
+
+            return videoSearchInfos;
         }
     }
 }

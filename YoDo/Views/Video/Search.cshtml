@@ -1,11 +1,13 @@
-﻿
+﻿@model  IEnumerable<YoDo.Models.VideoSearchInfo>
+
+
 @{
     ViewData["Title"] = "Search";
 }
 
 <div class="card text-left">
     <div class="card-body">
-        <h6 class="">Search: keyword</h6>
+        <h6 class="">Search: @ViewBag.Keyword</h6>
     </div>
 </div>
 
@@ -28,23 +30,23 @@
 
 
 <div class="row no-gutters bg-light position-relative">
-    @for (int i = 0; i < 50; i++)
+    @foreach (var videoInfo in Model)
     {
 
         <div class="col-md-6 mb-md-0 p-md-4">
-            <a href="#" title="See video on YouTube">
-                <img src="https://codyhouse.co/demo/squeezebox-portfolio-template/img/img.png" class="w-100" alt="video image">
+            <a href="https://www.youtube.com/watch?v=@videoInfo.VideoId" target="_blank" title="See video on YouTube">
+                <img src="@videoInfo.ThumbnailUrl" class="w-100" alt="video image">
             </a>
         </div>
         <div class="col-md-6 position-static p-4 pl-md-0 text-left">
 
             <h5 class="mt-0 card-title">
-                <a href="#" class="text-body " title="See video on YouTube">
-                    Video Title
+                <a href="https://www.youtube.com/watch?v=@videoInfo.VideoId" target="_blank" class="text-body " title="See video on YouTube">
+                    @videoInfo.Title
                 </a>
             </h5>
-            <a href="#" class="badge badge-light">Google</a> • <span class="badge badge-light text-black-50">6 Days Ago</span>
-            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scel congue felis in faucibus.</p>
+            <a href="#" class="badge badge-light">@videoInfo.ChannelTitle</a> • <span class="badge badge-light text-black-50">@videoInfo.PublishedAt</span>
+            <p>@videoInfo.Description</p>
             <button type="button" class="btn btn-light" title="Copy video ID to clipboard"><i class="fas fa-clipboard"></i></button>
             <button type="button" class="btn btn-light" title="Download video"><i class="fas fa-download"></i></button>
         </div>

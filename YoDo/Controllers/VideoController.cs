@@ -76,20 +76,27 @@ namespace YoDo.Controllers
         }
 
 
-        //GET Search 
-        public IActionResult Search() {
+        //POST Search 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Search(string searchKeyword) {
 
+            Search search = new Search();
+            List<VideoSearchInfo> videoSearchInfos = new List<VideoSearchInfo>();
+            try
+            {
+                //Try with await
+                videoSearchInfos = await search.Run(searchKeyword);
+            }
+            catch (AggregateException ex)
+            {
+                foreach (var e in ex.InnerExceptions)
+                {
+                    System.Diagnostics.Debug.WriteLine("Error: " + e.Message);
+                }
+            }
 
-            return View();
+            return View(videoSearchInfos);
         }
-
-        //POST Search
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public IActionResult Search() {
-
-
-        //    return View();
-        //}
     }
 }
