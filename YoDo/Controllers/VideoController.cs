@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Google.Apis.YouTube.Samples;
 using YoDo.Models;
+using System.IO;
 
 namespace YoDo.Controllers
 {
@@ -20,17 +21,18 @@ namespace YoDo.Controllers
         //POST Upload
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Upload(string id, string videoTitle, string videoTags, string videoCategorySelected, string videoDesc)
+        public async Task<IActionResult> Upload(string id, string videoPath, string videoTitle, string videoTags, string videoCategorySelected, string videoDesc)
         {
             System.Diagnostics.Debug.WriteLine("YouTube Data API: Upload Video");
             System.Diagnostics.Debug.WriteLine("==============================");
 
-            string fullVideoPath = @"C:\Users\User\Desktop\" + "airplane.mp4";
+
+            videoPath = Path.GetFullPath(videoPath, @"C:\Users\User\Desktop");
 
             try
             {
                 UploadVideo uploadVideo = new UploadVideo();
-                uploadVideo.Run(fullVideoPath, videoTitle, videoTags, videoCategorySelected, videoDesc).Wait();
+                uploadVideo.Run(videoPath, videoTitle, videoTags, videoCategorySelected, videoDesc).Wait();
 
                 if (uploadVideo.VideoId != null)
                     ViewBag.VideoId = uploadVideo.VideoId;

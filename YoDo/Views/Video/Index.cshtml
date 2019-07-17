@@ -56,7 +56,7 @@
 
     <div class="input-group">
         <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" required>
+            <input type="file" class="custom-file-input" id="videoPath" name="videoPath" aria-describedby="inputGroupFileAddon04" required>
             <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
         </div>
         <div class="input-group-append">
@@ -72,9 +72,9 @@
 
         $(document).ready(function () {
 
-            $('#inputGroupFile04').on('change', function () {
+            $('#videoPath').on('change', function () {
                 //get the file name
-                var fileName = document.getElementById("inputGroupFile04").files[0].name;
+                var fileName = document.getElementById("videoPath").files[0].name;
                 //replace the "Choose a file" label
                 $(this).next('.custom-file-label').html(fileName);
                 $("form").attr("asp-route-id", fileName);
