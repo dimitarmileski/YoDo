@@ -19,7 +19,7 @@ namespace YoDo.Controllers
         //    return View();
         //}
 
-        public async Task<IActionResult> Upload(string id, string videoTitle)
+        public async Task<IActionResult> Upload(string id, string videoTitle, string videoTags, string videoCategorySelected, string videoDesc)
         {
             System.Diagnostics.Debug.WriteLine("YouTube Data API: Upload Video");
             System.Diagnostics.Debug.WriteLine("==============================");
@@ -29,7 +29,7 @@ namespace YoDo.Controllers
             try
             {
                 UploadVideo uploadVideo = new UploadVideo();
-                uploadVideo.Run(fullVideoPath, videoTitle).Wait();
+                uploadVideo.Run(fullVideoPath, videoTitle, videoTags, videoCategorySelected, videoDesc).Wait();
 
                 if (uploadVideo.VideoId != null)
                     ViewBag.VideoId = uploadVideo.VideoId;

@@ -18,7 +18,7 @@
         <div class="input-group">
             <span class="input-group-text w-100" id="inputGroup-sizing-default">Tags</span>
         </div>
-        <input id="tags" data-role="tagsinput" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+        <input id="videoTags" name="videoTags" data-role="tagsinput" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
     </div>
 
 
@@ -27,7 +27,7 @@
         <div class="input-group-prepend">
             <label class="input-group-text" for="inputGroupSelect01">Category</label>
         </div>
-        <select class="custom-select" id="inputGroupSelect01" required>
+        <select  class="custom-select" id="videoCategorySelected" name="videoCategorySelected" required>
             <option selected>Choose category...</option>
             <option value="1">Film & Animation</option>
             <option value="2">Autos & Vehicles</option>
@@ -51,7 +51,7 @@
         <div class="input-group-prepend">
             <span class="input-group-text">Description</span>
         </div>
-        <textarea class="form-control" aria-label="With textarea" required></textarea>
+        <textarea id="videoDesc" name="videoDesc" class="form-control" aria-label="With textarea" required></textarea>
     </div>
 
     <div class="input-group">

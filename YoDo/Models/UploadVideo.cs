@@ -45,7 +45,7 @@ namespace Google.Apis.YouTube.Samples
         //    Console.ReadKey();
         //}
 
-        public async Task Run(string videoPath, string videoTitle)
+        public async Task Run(string videoPath, string videoTitle, string videoTags, string videoCategorySelected, string videoDesc)
         {
             UserCredential credential;
             using (var stream = new FileStream("client_secrets.json", FileMode.Open, FileAccess.Read))
@@ -69,9 +69,13 @@ namespace Google.Apis.YouTube.Samples
             var video = new Video();
             video.Snippet = new VideoSnippet();
             video.Snippet.Title = videoTitle;
-            video.Snippet.Description = "Default Video Description";
-            video.Snippet.Tags = new string[] { "tag1", "tag2" };
-            video.Snippet.CategoryId = "22"; // See https://developers.google.com/youtube/v3/docs/videoCategories/list
+            video.Snippet.Description = videoDesc;
+
+            string[] tagsArray = videoTags.Split(',');
+            video.Snippet.Tags = tagsArray;
+
+
+            video.Snippet.CategoryId = videoCategorySelected; // See https://developers.google.com/youtube/v3/docs/videoCategories/list
             video.Status = new VideoStatus();
             video.Status.PrivacyStatus = "public"; // or "private" or "public"
             var filePath = videoPath; // Replace with path to actual movie file.
