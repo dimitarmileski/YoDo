@@ -20,6 +20,13 @@ namespace YoDo.Models
 
         public static void SaveVideoToDisk(string link, string format)
         {
+
+            //Full Url or only Youtube ID
+            if (!link.Contains("https://www.youtube.com/watch?v="))
+            {
+                link = "https://www.youtube.com/watch?v=" + link;
+            }
+           
             var youtube = YouTube.Default;
             var video = youtube.GetVideo(link);
             System.IO.File.WriteAllBytes(homePath + @"\Downloads\" + video.FullName, video.GetBytes());
