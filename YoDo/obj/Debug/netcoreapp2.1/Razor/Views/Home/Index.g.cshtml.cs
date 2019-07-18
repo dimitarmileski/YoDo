@@ -102,7 +102,7 @@ using YoDo.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(47, 2925, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "292138cb364a4d129e3ebbbd799b9fa2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "03893e0aa22f4a589eace8988a3492cd", async() => {
                 BeginContext(116, 8, true);
                 WriteLiteral("\r\n\r\n    ");
                 EndContext();
@@ -117,7 +117,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n    <br />\r\n\r\n    <div class=\"input-group\">\r\n        <select class=\"custom-select\" id=\"formatSelected\" name=\"formatSelected\" aria-label=\"Example select with button addon\">\r\n            ");
                 EndContext();
                 BeginContext(420, 33, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e646cc6df2ce492fa67a2d2bc6f3ec41", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b52426b5d064e829ac83c18dec3980c", async() => {
                     BeginContext(428, 16, true);
                     WriteLiteral("Choose format...");
                     EndContext();
@@ -137,7 +137,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(467, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d3df4568d834693995f497957745de6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3aca04f7a6564ce999b50f135884c07a", async() => {
                     BeginContext(475, 8, true);
                     WriteLiteral("🎥 VIDEO");
                     EndContext();
@@ -157,7 +157,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(506, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "963b8469d80142ee947d43a26e128d56", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b786880e00b497f88573f82a644e9fc", async() => {
                     BeginContext(526, 3, true);
                     WriteLiteral("asf");
                     EndContext();
@@ -179,7 +179,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(552, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a77e574ad404297b4bddddea8f67789", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8cadbffe5d1a48a2a2e512ce9fad9627", async() => {
                     BeginContext(572, 3, true);
                     WriteLiteral("avi");
                     EndContext();
@@ -201,7 +201,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(598, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dccddc90955d4b37917995586b1ac4c9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5fb587615d864cc88b2b6c7d973a2171", async() => {
                     BeginContext(618, 3, true);
                     WriteLiteral("f4v");
                     EndContext();
@@ -223,7 +223,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(644, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3454546b99d446dabb8cbbd4a5acf98f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9958338524f84216b4cbd3f28de42def", async() => {
                     BeginContext(664, 3, true);
                     WriteLiteral("flv");
                     EndContext();
@@ -245,7 +245,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(690, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2644f0d6d3414ff3987b4256a2d487e0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4fed1ebef6ed42f3ac9afa8d5b370e7e", async() => {
                     BeginContext(710, 3, true);
                     WriteLiteral("m2t");
                     EndContext();
@@ -267,7 +267,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(736, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3037c0afc1649a480986b0447c67b68", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28e30d6058e0487cab57ca65b7c88d10", async() => {
                     BeginContext(757, 4, true);
                     WriteLiteral("m2ts");
                     EndContext();
@@ -289,7 +289,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(784, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1bfe24a6bfe4f66a77517c8cccd52e3", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "243da3b1e3674873ad7a181c4dbc97b6", async() => {
                     BeginContext(804, 3, true);
                     WriteLiteral("mkv");
                     EndContext();
@@ -311,7 +311,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(830, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e47df53a4284285be101448e96c08b1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bf304cc498b6438a8bf0c0c25e2d926d", async() => {
                     BeginContext(850, 3, true);
                     WriteLiteral("mov");
                     EndContext();
@@ -333,7 +333,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(876, 41, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "02c4ebf5bca34076890151deaf901fbc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92e5b520ca7547eabdb9a1b6893eb23a", async() => {
                     BeginContext(905, 3, true);
                     WriteLiteral("mp4");
                     EndContext();
@@ -358,7 +358,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(931, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "991ffc7abdc040ab96d47a0c3f6da803", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b2705048d1ac41dbafb2374a754f5331", async() => {
                     BeginContext(951, 3, true);
                     WriteLiteral("mpg");
                     EndContext();
@@ -380,7 +380,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(977, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a711c2133696434aaeacb43675dbd6f5", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a117b86ebcf04be08a91cb26dc88168c", async() => {
                     BeginContext(997, 3, true);
                     WriteLiteral("mts");
                     EndContext();
@@ -402,7 +402,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1023, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef356fb089b948e98d77b98abf809419", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55c67c275bb34dba878d5c5780e12075", async() => {
                     BeginContext(1043, 3, true);
                     WriteLiteral("nut");
                     EndContext();
@@ -424,7 +424,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1069, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d478aca4f37e4fd697353613c6b4e8cd", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d3ab395f8fbb47d58b54a9e7f6ecd048", async() => {
                     BeginContext(1089, 3, true);
                     WriteLiteral("ogv");
                     EndContext();
@@ -446,7 +446,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1115, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "28babff7066b493391f08cab07c6d2c1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a4674e3fc9bf4594ad081c2d75efd4b8", async() => {
                     BeginContext(1134, 2, true);
                     WriteLiteral("ts");
                     EndContext();
@@ -468,7 +468,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1159, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a595b0fa03242b48334c3893ecb165b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c7bca2950fb948e7969ba52aa8c477d4", async() => {
                     BeginContext(1179, 3, true);
                     WriteLiteral("vob");
                     EndContext();
@@ -490,7 +490,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1205, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "989e1a26404840d9ab7972a8678567c8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4a2d77c7b4464e35a84eb21ec8d7ba19", async() => {
                     BeginContext(1226, 4, true);
                     WriteLiteral("webm");
                     EndContext();
@@ -512,7 +512,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1253, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "12dc80caa0af48b18ea55cc35837ecdb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65422d9ed4264d4aad57bf3cb0beb32c", async() => {
                     BeginContext(1273, 3, true);
                     WriteLiteral("wmv");
                     EndContext();
@@ -534,7 +534,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1299, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6b3df242dad423abba93964f773d410", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4bb00bc296f74638acdfa2818d0c2972", async() => {
                     BeginContext(1319, 3, true);
                     WriteLiteral("wtv");
                     EndContext();
@@ -556,7 +556,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1345, 25, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de0797d4a97f4141bff763bb52a5c8c4", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56404657535e44bc9bc2ec8aa8aa1712", async() => {
                     BeginContext(1353, 8, true);
                     WriteLiteral("🎧 AUDIO");
                     EndContext();
@@ -576,7 +576,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1384, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "983a2e0ced534d738a84e4bb6b8f99b1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1ff0bba0aa343aa9b17fa3eba1795bf", async() => {
                     BeginContext(1404, 3, true);
                     WriteLiteral("aac");
                     EndContext();
@@ -598,7 +598,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1430, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a88760c8d9a54736ae4a728db979367d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "103f0175ffdb44869ca7aa38efcc38f2", async() => {
                     BeginContext(1450, 3, true);
                     WriteLiteral("aif");
                     EndContext();
@@ -620,7 +620,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1476, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3040896ae104c90b7ebcbb7aafaf4a2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc7e84858bc94b5ba9849ad4253c2b64", async() => {
                     BeginContext(1497, 4, true);
                     WriteLiteral("aifc");
                     EndContext();
@@ -642,7 +642,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1524, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f51821c4a6c34b19a3d9a707f2c75033", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "541f49e0ffac4e92b4d7c76dc95a21f5", async() => {
                     BeginContext(1545, 4, true);
                     WriteLiteral("aiff");
                     EndContext();
@@ -664,7 +664,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1572, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8b72f6f35aec4627ba56b3fadf67cc85", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9e53780149742e692437ddf2f11d111", async() => {
                     BeginContext(1591, 2, true);
                     WriteLiteral("au");
                     EndContext();
@@ -686,7 +686,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1616, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1f3473f78fa4128ae9b3248f9b59787", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2353594dc9f43b7a3d814be76b4fd7a", async() => {
                     BeginContext(1637, 4, true);
                     WriteLiteral("flac");
                     EndContext();
@@ -708,7 +708,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1664, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "625713c0a98c4896b0ac662971dba7ca", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "23b069ade741487d93ca020dd34bcb12", async() => {
                     BeginContext(1684, 3, true);
                     WriteLiteral("m4a");
                     EndContext();
@@ -730,7 +730,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1710, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ce78c7ddf6c43a4ade8b3823a521eeb", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7871f1f24f864fa6bdf33e4bbb892858", async() => {
                     BeginContext(1730, 3, true);
                     WriteLiteral("m4v");
                     EndContext();
@@ -752,7 +752,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1756, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2de35e32175343e782bfcdad403dfac8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8083286585374cc8a102992a741e8432", async() => {
                     BeginContext(1776, 3, true);
                     WriteLiteral("mka");
                     EndContext();
@@ -774,7 +774,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1802, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc9e762adab1426984abb5c54d9c79bc", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b8e9aa73b6a4c9486b32de457635f2c", async() => {
                     BeginContext(1822, 3, true);
                     WriteLiteral("mp2");
                     EndContext();
@@ -796,7 +796,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1848, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e45c77d7e86846eaacb712ba785573ce", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "49c64469c2294a1b92b0c318add65b4c", async() => {
                     BeginContext(1868, 3, true);
                     WriteLiteral("mp3");
                     EndContext();
@@ -818,7 +818,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1894, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3944cb5a17054a8282f1e2aa441a2b16", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "695a689666414751b444d627334ca050", async() => {
                     BeginContext(1914, 3, true);
                     WriteLiteral("mpa");
                     EndContext();
@@ -840,7 +840,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1940, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1563a5ad5fb4438dbe4857b221f8412c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "435f19edf89d4124b2245a44d3c92c57", async() => {
                     BeginContext(1960, 3, true);
                     WriteLiteral("ogg");
                     EndContext();
@@ -862,7 +862,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(1986, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c85b382921a4bd9a3c0fd0fbf33476d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9955dde1a4ac48599b8c075bec69821a", async() => {
                     BeginContext(2006, 3, true);
                     WriteLiteral("wav");
                     EndContext();
@@ -884,7 +884,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(2032, 30, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "27f0ec411c5242f0a2fc1585669657fa", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "893bd2223e0b4bb790898fee75889b97", async() => {
                     BeginContext(2040, 13, true);
                     WriteLiteral("🖼️ THUMBNAIL");
                     EndContext();
@@ -904,7 +904,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(2076, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2eaf96670c5c46ff9e3a6207ce846e04", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18889519023c439081c73fbfb12ce9ec", async() => {
                     BeginContext(2096, 3, true);
                     WriteLiteral("bmp");
                     EndContext();
@@ -926,7 +926,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(2122, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d93f334fc6b540048279ba039bbf12c8", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84985704e1434166bd86a4d5cf29b5af", async() => {
                     BeginContext(2142, 3, true);
                     WriteLiteral("gif");
                     EndContext();
@@ -948,7 +948,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(2168, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d528fc4a54de45988abdf9499444c21e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "572d97807a3b45829c31ce4a52abbd0a", async() => {
                     BeginContext(2189, 4, true);
                     WriteLiteral("jpeg");
                     EndContext();
@@ -970,7 +970,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(2216, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8bff7b00464246a68428944fe15d1791", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d009f780aae34415aa258cc950aaa218", async() => {
                     BeginContext(2236, 3, true);
                     WriteLiteral("jpg");
                     EndContext();
@@ -992,7 +992,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(2262, 32, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b9163d9f7fd342eeb7d10584fb51ec2b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4bb83f5e7164711b5409de2cb963142", async() => {
                     BeginContext(2282, 3, true);
                     WriteLiteral("png");
                     EndContext();
@@ -1014,7 +1014,7 @@ Write(Html.TextBox("videoUrl", "", new { placeholder = "Enter URL or YouTube vid
                 WriteLiteral("\r\n            ");
                 EndContext();
                 BeginContext(2308, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47dacfd2f0aa4e6998ee638867eec099", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bb1f3e26c2d84931ba5674b7d5bc3f05", async() => {
                     BeginContext(2329, 4, true);
                     WriteLiteral("tiff");
                     EndContext();
