@@ -10,6 +10,7 @@ using Google.Apis.Upload;
 using Google.Apis.Util.Store;
 using Google.Apis.YouTube.v3;
 using Google.Apis.YouTube.v3.Data;
+using Microsoft.Extensions.Configuration;
 
 namespace Google.Apis.YouTube.Samples
 {
@@ -21,6 +22,13 @@ namespace Google.Apis.YouTube.Samples
 
     internal class UploadVideo
     {
+        public IConfiguration _config { get;}
+
+        public UploadVideo(IConfiguration config)
+        {
+            _config = config;
+        }
+
         public string VideoId;
 
         //[STAThread]
@@ -48,7 +56,7 @@ namespace Google.Apis.YouTube.Samples
         public async Task Run(string videoPath, string videoTitle, string videoTags, string videoCategorySelected, string videoDesc)
         {
             UserCredential credential;
-            using (var stream = new FileStream("client_secrets.json", FileMode.Open, FileAccess.Read))
+            using (var stream = new FileStream(_config["ClientSecretsYoutubeUpload"], FileMode.Open, FileAccess.Read))
             {
                 credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,

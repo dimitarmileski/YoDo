@@ -28,6 +28,7 @@ using Google.Apis.Upload;
 using Google.Apis.Util.Store;
 using Google.Apis.YouTube.v3;
 using Google.Apis.YouTube.v3.Data;
+using Microsoft.Extensions.Configuration;
 using YoDo.Models;
 
 namespace Google.Apis.YouTube.Samples
@@ -43,6 +44,14 @@ namespace Google.Apis.YouTube.Samples
     /// </summary>
     public class Search
     {
+
+        public IConfiguration _config { get; }
+
+        public Search(IConfiguration config)
+        {
+            _config = config;
+        }
+
         //[STAThread]
         //static void Main(string[] args)
         //{
@@ -62,7 +71,7 @@ namespace Google.Apis.YouTube.Samples
         //    }
 
         //    System.Diagnostics.Debug.WriteLine("Press any key to continue...");
-  
+
         //}
 
         public async Task<List<VideoSearchInfo>> Run(string searchKeyword)
@@ -71,7 +80,7 @@ namespace Google.Apis.YouTube.Samples
 
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
-                ApiKey = "AIzaSyBemnWWSyoukmB_QzoLQke902v7ltD06fs",
+                ApiKey = _config["ApiKeyYoutubeSearch"],
                 ApplicationName = this.GetType().ToString()
             });
 

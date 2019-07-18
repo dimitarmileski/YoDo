@@ -7,11 +7,19 @@ using Google.Apis.YouTube.Samples;
 using YoDo.Models;
 using System.IO;
 using YoDo.Models.ViewModels;
+using Microsoft.Extensions.Configuration;
 
 namespace YoDo.Controllers
 {
     public class VideoController : Controller
     {
+        public IConfiguration Configuration { get; }
+
+        public VideoController(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+       
 
         //GET Upload
         public IActionResult Index() {
@@ -32,7 +40,7 @@ namespace YoDo.Controllers
 
             try
             {
-                UploadVideo uploadVideo = new UploadVideo();
+                UploadVideo uploadVideo = new UploadVideo(Configuration);
                 uploadVideo.Run(videoPath, videoTitle, videoTags, videoCategorySelected, videoDesc).Wait();
 
                 if (uploadVideo.VideoId != null)
@@ -82,7 +90,7 @@ namespace YoDo.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Search(string searchKeyword) {
 
-            Search search = new Search();
+            Search search = new Search(Configuration);
             List<VideoSearchInfo> videoSearchInfos = new List<VideoSearchInfo>();
             try
             {
@@ -104,5 +112,6 @@ namespace YoDo.Controllers
 
             return View(searchViewModel);
         }
+
     }
 }
