@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[1.40.2.1593, )"
             },
+            "Humanizer": {
+              "target": "Package",
+              "version": "[2.6.2, )"
+            },
             "MediaToolkit": {
               "target": "Package",
               "version": "[1.1.0.1, )"

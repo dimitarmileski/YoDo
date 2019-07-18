@@ -114,6 +114,8 @@ namespace Google.Apis.YouTube.Samples
                         {
                             Title = searchResult.Snippet.Title,
                             ChannelId = searchResult.Id.ChannelId,
+                            ThumbnailUrl = searchResult.Snippet.Thumbnails.High.Url,
+                            Description = searchResult.Snippet.Description,
                             isChannel = true,
                             isPlaylist = false
                         });
@@ -125,6 +127,8 @@ namespace Google.Apis.YouTube.Samples
                         {
                             Title = searchResult.Snippet.Title,
                             PlaylistId = searchResult.Id.PlaylistId,
+                            ThumbnailUrl = searchResult.Snippet.Thumbnails.High.Url,
+                            Description = searchResult.Snippet.Description,
                             isChannel = false,
                             isPlaylist = true
                         });

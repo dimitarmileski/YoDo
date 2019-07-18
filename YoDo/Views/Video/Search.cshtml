@@ -1,7 +1,8 @@
-﻿@model  YoDo.Models.ViewModels.SearchViewModel
-
+﻿@model YoDo.Models.ViewModels.SearchViewModel
+@using Humanizer;
 
 @{
+
     ViewData["Title"] = "Search";
 }
 
@@ -29,30 +30,74 @@
     </ul>*@
 
 
-<div class="row no-gutters bg-light position-relative">
+<div class="row no-gutters bg-light position-relative" style="word-wrap: break-word;">
     @foreach (var videoInfo in Model.VideoSearchInfos)
     {
-
-        <div class="col-md-6 mb-md-0 p-md-4">
-            <a href="https://www.youtube.com/watch?v=@videoInfo.VideoId" target="_blank" title="See video on YouTube">
-                <img src="@videoInfo.ThumbnailUrl" class="w-100" alt="video image">
-            </a>
-        </div>
-        <div class="col-md-6 position-static p-4 pl-md-0 text-left">
-
-            <h5 class="mt-0 card-title">
-                <a href="https://www.youtube.com/watch?v=@videoInfo.VideoId" target="_blank" class="text-body " title="See video on YouTube">
-                    @videoInfo.Title
+        if (!videoInfo.isChannel && !videoInfo.isPlaylist)
+        {
+            <div class="col-md-6 mb-md-0 p-md-4">
+                <a href="https://www.youtube.com/watch?v=@videoInfo.VideoId" target="_blank" title="See video on YouTube">
+                    <img src="@videoInfo.ThumbnailUrl" class="w-100" alt="video image">
                 </a>
-            </h5>
-            <a href="#" class="badge badge-light">@videoInfo.ChannelTitle</a> • <span class="badge badge-light text-black-50">@videoInfo.PublishedAt</span>
-            <p>@videoInfo.Description</p>
-            <button type="button" class="btn btn-light" title="Copy video ID to clipboard"><i class="fas fa-clipboard"></i></button>
-            <button type="button" class="btn btn-light" title="Download video"><i class="fas fa-download"></i></button>
-        </div>
-        <hr />
+            </div>
+            <div class="col-md-6 position-static p-4 pl-md-0 text-left">
+
+                <h5 class="mt-0 card-title">
+                    <a href="https://www.youtube.com/watch?v=@videoInfo.VideoId" target="_blank" class="text-body text-decoration-none" title="See video on YouTube">
+                        @videoInfo.Title
+                    </a>
+                </h5>
+                <a href="https://www.youtube.com/channel/@videoInfo.ChannelId" target="_blank" class="badge badge-light">@videoInfo.ChannelTitle</a> • <span class="badge badge-light text-black-50">@Convert.ToDateTime(videoInfo.PublishedAt).Humanize()</span>
+                <p>@videoInfo.Description</p>
+                <button type="button" class="btn btn-light" title="Copy video ID to clipboard"><i class="fas fa-clipboard"></i></button>
+                <button type="button" class="btn btn-light" title="Download video"><i class="fas fa-download"></i></button>
+            </div>
+
+
+        }
+        else if (videoInfo.isPlaylist)
+        {
+            <div class="col-md-6 mb-md-0 p-md-4">
+                <a href="https://www.youtube.com/playlist?list=@videoInfo.PlaylistId" target="_blank" title="See video on YouTube">
+                    <img src="@videoInfo.ThumbnailUrl" class="w-100" alt="video image">
+                </a>
+            </div>
+            <div class="col-md-6 position-static p-4 pl-md-0 text-left">
+
+                <h5 class="mt-0 card-title">
+                    <a href="https://www.youtube.com/playlist?list=@videoInfo.PlaylistId" target="_blank" class="text-body text-decoration-none" title="See video on YouTube">
+                        @videoInfo.Title
+                    </a>
+                </h5>
+                <span class="badge badge-light">Playlist</span>
+                <p>@videoInfo.Description</p>
+                <button type="button" class="btn btn-light" title="Copy Playlist ID to clipboard"><i class="fas fa-clipboard"></i></button>
+                <a href="https://www.youtube.com/playlist?list=@videoInfo.PlaylistId" target="_blank" class="text-secondary text-decoration-none">VIEW FULL PLAYLIST</a>
+            </div>
+        }
+        else
+        {
+            <div class="col-md-6 mb-md-0 p-md-4">
+                <a href="https://www.youtube.com/channel/@videoInfo.ChannelId" target="_blank" title="See video on YouTube">
+                    <img src="@videoInfo.ThumbnailUrl" class="w-50 rounded-circle" alt="video image">
+                </a>
+            </div>
+            <div class="col-md-6 position-static p-4 pl-md-0 text-left">
+
+                <h5 class="mt-0 card-title">
+                    <a href="https://www.youtube.com/channel/@videoInfo.ChannelId" target="_blank" class="text-body text-decoration-none" title="See video on YouTube">
+                        @videoInfo.Title
+                    </a>
+                </h5>
+                <span class="badge badge-light">Channel</span>
+                <p>@videoInfo.Description</p>
+                <button type="button" class="btn btn-light" title="Copy channel ID to clipboard"><i class="fas fa-clipboard"></i></button>
+            </div>
+        }
+
     }
 
 </div>
+
 
 
