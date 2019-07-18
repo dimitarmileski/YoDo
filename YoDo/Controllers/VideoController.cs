@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Google.Apis.YouTube.Samples;
 using YoDo.Models;
 using System.IO;
+using YoDo.Models.ViewModels;
 
 namespace YoDo.Controllers
 {
@@ -96,7 +97,12 @@ namespace YoDo.Controllers
                 }
             }
 
-            return View(videoSearchInfos);
+            SearchViewModel searchViewModel = new SearchViewModel {
+                Keyword = searchKeyword,
+                VideoSearchInfos = videoSearchInfos
+            };
+
+            return View(searchViewModel);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model  IEnumerable<YoDo.Models.VideoSearchInfo>
+﻿@model  YoDo.Models.ViewModels.SearchViewModel
 
 
 @{
@@ -7,7 +7,7 @@
 
 <div class="card text-left">
     <div class="card-body">
-        <h6 class="">Search: @ViewBag.Keyword</h6>
+        <h6 class="">Search: <span class="text-black-50">@Model.Keyword</span></h6>
     </div>
 </div>
 
@@ -30,7 +30,7 @@
 
 
 <div class="row no-gutters bg-light position-relative">
-    @foreach (var videoInfo in Model)
+    @foreach (var videoInfo in Model.VideoSearchInfos)
     {
 
         <div class="col-md-6 mb-md-0 p-md-4">
