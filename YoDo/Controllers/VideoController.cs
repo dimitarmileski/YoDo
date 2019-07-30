@@ -113,5 +113,22 @@ namespace YoDo.Controllers
             return View(searchViewModel);
         }
 
+
+        //POST Download
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DownloadVideo(string videoId)
+        {
+            if (videoId == null || videoId.Equals(""))
+            {
+                return RedirectToAction(nameof(Index));
+            }
+
+            Video.SaveVideoToDisk(videoId, "mp4");
+
+            return RedirectToAction("Index", "Home");
+        }
+
+
     }
 }
