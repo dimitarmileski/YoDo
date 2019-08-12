@@ -80,7 +80,7 @@ namespace Google.Apis.YouTube.Samples
 
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {
-                ApiKey = _config["ApiKeyYoutubeSearch"],
+                ApiKey = _config["ClientSecrets:ApiKeyYoutubeSearch"],
                 ApplicationName = this.GetType().ToString()
             });
 

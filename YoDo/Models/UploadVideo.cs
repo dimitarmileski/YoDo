@@ -56,17 +56,19 @@ namespace Google.Apis.YouTube.Samples
         public async Task Run(string videoPath, string videoTitle, string videoTags, string videoCategorySelected, string videoDesc)
         {
             UserCredential credential;
-            using (var stream = new FileStream(_config["ClientSecretsYoutubeUpload"], FileMode.Open, FileAccess.Read))
-            {
-                credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
-                    GoogleClientSecrets.Load(stream).Secrets,
-                    // This OAuth 2.0 access scope allows an application to upload files to the
-                    // authenticated user's YouTube channel, but doesn't allow other types of access.
-                    new[] { YouTubeService.Scope.YoutubeUpload },
-                    "user",
-                    CancellationToken.None
-                );
-            }
+            
+            credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
+                new ClientSecrets() {
+                    ClientId = _config["ClientSecrets:ClientId"],
+                    ClientSecret = _config["ClientSecrets:ClientSecret"]
+                },
+                // This OAuth 2.0 access scope allows an application to upload files to the
+                // authenticated user's YouTube channel, but doesn't allow other types of access.
+                new[] { YouTubeService.Scope.YoutubeUpload },
+                "user",
+                CancellationToken.None
+            );
+            
 
             var youtubeService = new YouTubeService(new BaseClientService.Initializer()
             {

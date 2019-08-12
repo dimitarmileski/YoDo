@@ -5,7 +5,6 @@ C:\Users\User\Documents\GitHub\YoDo\YoDo\bin\Debug\netcoreapp2.1\YoDo.dll
 C:\Users\User\Documents\GitHub\YoDo\YoDo\bin\Debug\netcoreapp2.1\YoDo.pdb
 C:\Users\User\Documents\GitHub\YoDo\YoDo\bin\Debug\netcoreapp2.1\YoDo.Views.dll
 C:\Users\User\Documents\GitHub\YoDo\YoDo\bin\Debug\netcoreapp2.1\YoDo.Views.pdb
-C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.csprojAssemblyReference.cache
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.RazorAssemblyInfo.cache
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.RazorAssemblyInfo.cs
@@ -18,7 +17,12 @@ C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Hom
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_StatusMessages.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Convert.g.cshtml.cs
+C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Index.g.cshtml.cs
+C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Search.g.cshtml.cs
+C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Upload.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.RazorTargetAssemblyInfo.cache
@@ -27,8 +31,4 @@ C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.Views.pdb
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.dll
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.pdb
 C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.csproj.CopyComplete
-C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_StatusMessages.g.cshtml.cs
-C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Index.g.cshtml.cs
-C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Upload.g.cshtml.cs
-C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Convert.g.cshtml.cs
-C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\Razor\Views\Video\Search.g.cshtml.cs
+C:\Users\User\Documents\GitHub\YoDo\YoDo\obj\Debug\netcoreapp2.1\YoDo.csprojAssemblyReference.cache
